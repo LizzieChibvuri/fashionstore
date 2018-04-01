@@ -31,8 +31,8 @@
                                 <option>Tops</option>
                                 <option>Skirts</option>
                                 <option>Shoes</option>
-                                <option>Dresses<option>
-                                <option>Other<option>
+                                <option>Dresses</option>
+                                <option>Other</option>
                             </select>
                         </div>
                     </div>

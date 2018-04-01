@@ -31,8 +31,9 @@ class TopupsController extends Controller
         //fetch all topups
         $userid=auth()->user()->id;
         $user=User::find($userid);
+        $accountid=$user->useraccount['id'];
         $currentbalance=$user->useraccount['balance']; 
-        $topups=Topup::orderby('created_at','desc')->get();
+        $topups=Topup::where('useraccount_id',$accountid)->orderby('created_at','desc')->get();
 
         //pass topups data to view
         return view('topups.index',['topups'=>$topups,'balance'=>$currentbalance]);

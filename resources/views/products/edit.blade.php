@@ -27,13 +27,14 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" >Category</label>
                         <div class="col-sm-10">
-                            <select name='category' id='category'  selected="{{$product->category}}" class='form-control'>
+                            <input type="hidden"   id="valuefromDB"  value="{{$product->category}}"/>
+                            <select name='category' id='category'   class='form-control'>
                                 <option value="Accesories">Accessories</option>
                                 <option value="Tops">Tops</option>
                                 <option value="Skirts">Skirts</option>
                                 <option value="Shoes">Shoes</option>
-                                <option value="Dresses">Dresses<option>
-                                <option value="Other">Other<option>
+                                <option value="Dresses">Dresses</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                     </div>

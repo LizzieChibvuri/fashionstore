@@ -12,7 +12,17 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
+    <script src="{{ asset('js/jquery-3.3.1.js') }}"></script>
+   
+    <script>
+    $(document).ready(function(){
+        $('option').each(function(){
+            if(this.value==$('#valuefromDB').val()){
+                this.setAttribute('selected','selected');
+            }
+        });
+    });
+    </script>
 <body>
     <div id="app">
    
