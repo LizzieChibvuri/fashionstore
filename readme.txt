@@ -4,7 +4,7 @@ Purpose:This application allows users to buy products and manage their accounts
 
 Steps to setupon local machine:
 
-1.clone mystore project from github 
+1.clone fashionstore project from github 
 2.From the DB_backup folder import mystore.sql file on your local mysql database
 2.using cmd on local machine go to project folder
 3.run composer install
